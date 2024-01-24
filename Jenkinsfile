@@ -13,10 +13,10 @@ pipeline{
                 sh './gradlew assemble'
             }
         }
-        stage("build"){
-            steps{
-                sh './gradlew bootRun'
-            }
+        // stage("build"){
+        //     steps{
+        //         sh './gradlew bootRun'
+        //     }
         }
     }
 }
