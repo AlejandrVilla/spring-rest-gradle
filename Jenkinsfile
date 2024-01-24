@@ -17,6 +17,6 @@ pipeline{
         //     steps{
         //         sh './gradlew bootRun'
         //     }
-        }
+        // }
     }
 }
