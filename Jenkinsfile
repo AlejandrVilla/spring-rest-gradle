@@ -7,12 +7,12 @@ pipeline{
                 
             }
         }
-        // stage("test"){
-        //     steps{
-        //         echo "test"
-        //         sh './gradlew assemble'
-        //     }
-        // }
+        stage("test"){
+            steps{
+                echo "test"
+                sh './gradlew assemble'
+            }
+        }
         stage("build"){
             steps{
                 sh './gradlew bootRun'
