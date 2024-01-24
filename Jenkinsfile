@@ -4,7 +4,7 @@ pipeline{
         stage("build"){
             steps{
                 sh 'java -version'
-                sh 'gradlew bootRUn'
+                sh 'gradlew bootRun'
             }
         }
         stage("test"){
