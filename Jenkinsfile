@@ -3,13 +3,19 @@ pipeline{
     stages{
         stage("version"){
             steps{
-                echo "test"
                 sh 'java -version'
+                
+            }
+        }
+        stage("test"){
+            steps{
+                echo "test"
+                sh './gradlew assemble'
             }
         }
         stage("build"){
             steps{
-                sh 'gradle bootRun'
+                sh './gradlew bootRun'
             }
         }
     }
